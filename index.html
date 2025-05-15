@@ -1,121 +1,97 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Tutos Sport | Formations et Clubs pour Tous</title>
-  <link href="feuilledestyle.css" rel="stylesheet" type="text/css" />
- <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f2f2f2;
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🏅 Accueil – Sport&Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #e0f7f5, #c2f0ec);
+      margin: 0;
+      padding: 0;
+    }
 
-  header {
-    background-color: #007BFF;
-    color: white;
-    text-align: center;
-    padding: 30px 0;
-  }
+    header {
+      background-color: #007373;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
 
+    header h1 {
+      font-size: 2.8em;
+      margin: 0;
+    }
 
-<p style="text-align:center;"><a href="index.html">⬅️ Retour à l’accueil</a></p>
-  main {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
 
- h2 {
-  color: #333;
-  text-align: center;
-}
-main p {
-  text-align: center;
-}
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 50px 20px;
+    }
 
+    .nav-button {
+      background-color: #008080;
+      color: white;
+      border: none;
+      padding: 18px 30px;
+      font-size: 1.1em;
+      border-radius: 8px;
+      text-decoration: none;
+      text-align: center;
+      width: 260px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      display: inline-block;
+    }
 
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
+    .nav-button:hover {
+      background-color: #005f5f;
+      transform: translateY(-2px);
+    }
 
-  li {
-    margin: 10px 0;
-  }
+    .emoji {
+      margin-right: 8px;
+    }
 
-  a {
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: bold;
-  }
-
-  a:hover {
-  text-decoration: underline;
-  color: #0056b3;
-  transition: color 0.3s ease;
-}
-.boutons {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center;
-  margin-top: 20px;
-}
-
-button {
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  width: 200px;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-</style>
-
-
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
 </head>
-
-
 <body>
+
   <header>
-  <h1>Bienvenue sur les Tutos Sport</h1>
-  <p>Apprenez, progressez, performez !</p>
-</header>
+    <h1>🏅 Sport&Form</h1>
+    <p>Explorez nos services et trouvez l’activité qui vous correspond !</p>
+  </header>
 
- <main>
-  <h2>Nos pages disponibles</h2>
-   <p><strong>Tutos Sport</strong> vous aide à découvrir les formations et clubs pour vous améliorer dans le sport que vous aimez 💪</p>
-  <p>Explorez les différentes pages :</p>
+  <div class="button-container">
+    <a href="formations.html" class="nav-button">
+      <span class="emoji">📚</span> Voir les Formations
+    </a>
+    <a href="clubs.html" class="nav-button">
+      <span class="emoji">🏟️</span> Découvrir les Établissements
+    </a>
+    <a href="inscription.html" class="nav-button">
+      <span class="emoji">📝</span> M’inscrire maintenant
+    </a>
+  </div>
 
- <div class="boutons">
-  <button onclick="afficherMessage()">📘 Formations</button>
-  <a href="etablissements.html"><button>🏟️ Clubs</button></a>
-  <a href="inscription.html"><button>📝 Inscription</button></a>
-</div>
+  <footer>
+    © 2025 Sport&Form – Tous droits réservés
+  </footer>
 
-
-</main>
-<script>
-  function afficherMessage() {
-  if (confirm("Souhaitez-vous accéder à la page des formations sportives ?")) {
-    window.location.href = "formations.html";
-  }
-}
-
-</script>
 </body>
-
 </html>
+
